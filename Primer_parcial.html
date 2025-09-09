@@ -1,54 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Formulario de registro completo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f4f4f4;
         }
-        h1 {
-            color: #333;
+        table {
+            width: 900px;
+            border-collapse: collapse;
+            margin: auto;
+            border: 1px solid #ccc;
         }
-        form {
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            vertical-align: top;
         }
-        label {
-            display: block;
-            margin-bottom: 8px;
+        .titulo {
             font-weight: bold;
         }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .center {
+            text-align: center;
         }
-        input[type="submit"] {
-            background-color: #5cb85c;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+        .botones {
+            text-align: center;
         }
-        input[type="submit"]:hover {
-            background-color: #4cae4c;
+        img {
+            width: 150px;
         }
     </style>
-    <h1>Formulario de Registro</h1>
-    <h3>Titulo</h3>
+</head>
+<body>
+    <h2 class="center">Formulario de registro completo</h2>
 
+    <form action="#" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td colspan="1" class="titulo">Nombre:</td>
+                <td><input type="text" name="nombre" required></td>
+                <td rowspan="3">Datos complementarios</td>
+            </tr>
+            <tr>
+                <td class="titulo">Correo:</td>
+                <td><input type="email" name="correo" required></td>
+            </tr>
+            <tr>
+                <td class="titulo">Contraseña:</td>
+                <td><input type="password" name="contrasena" required></td>
+            </tr>
+            
+        </table>
+    </form>
 </body>
 </html>

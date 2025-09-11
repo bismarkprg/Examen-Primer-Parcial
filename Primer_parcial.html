@@ -35,22 +35,22 @@
     </style>
 </head>
 <body>
-    <h2 class="center">Formulario de registro completo</h2>
+    
 
     <form action="#" method="post" enctype="multipart/form-data">
         <table>
             <tr>
-                <td colspan="1" class="titulo">Nombre:</td>
-                <td><input type="text" name="nombre" required></td>
-                <td rowspan="3">Datos complementarios</td>
+                <td colspan="2">
+                   <h2 class="center">Formulario de registro completo</h2>
+                </td>
+                <td>Titulo</td>
             </tr>
             <tr>
-                <td class="titulo">Correo:</td>
-                <td><input type="email" name="correo" required></td>
-            </tr>
-            <tr>
-                <td class="titulo">Contraseña:</td>
-                <td><input type="password" name="contrasena" required></td>
+                <td colspan="2" class="titulo">Nombre:    <input type="text" name="nombre" required><br>
+                    <br>Correo:<input type="email" name="correo" required><br>
+                <br>Contraseña:<input type="password" name="contrasena" required></td>
+                
+                <td rowspan="1">Datos complementarios</td>
             </tr>
             <tr>
                 <td colspan="2" class="center">
@@ -64,17 +64,13 @@
                 <td>Datos de género</td>
             </tr>
             <tr>
-                <td class="titulo">Intereses:</td>
-                <td>
+                <td colspan="2"class="titulo">Intereses:
+                    <br>
                     <input type="checkbox" name="intereses" value="Música"> Música
                     <input type="checkbox" name="intereses" value="Deporte"> Deporte
                     <input type="checkbox" name="intereses" value="Lectura"> Lectura
-                </td>
-                <td rowspan="2">Datos complementarios</td>
-            </tr>
-            <tr>
-                <td class="titulo">País:</td>
-                <td>
+                    <br><br>
+                    País:
                     <select name="pais">
                         <option value="Bolivia">Bolivia</option>
                         <option value="Argentina">Argentina</option>
@@ -83,11 +79,15 @@
                         <option value="México">México</option>
                         <option value="Otro">Otro</option>
                     </select>
-                </td>
-            </tr>
+                    <br><br>
+                    Fecha de nacimiento:     <input type="date" name="fecha">
+  
+                <td rowspan="1">Datos complementarios</td>
+
+
             <tr>
-                <td class="titulo">Fecha de nacimiento:</td>
-                <td><input type="date" name="fecha"></td>
+                <td class="titulo"></td>
+                <td></td>
                 <td rowspan="3">Datos adicionales</td>
             </tr>
             <tr>

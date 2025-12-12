@@ -27,7 +27,7 @@
             text-align: center;
         }
         .botones {
-            text-align: center;
+            text-align: left;
         }
         img {
             width: 150px;
@@ -81,22 +81,25 @@
                     </select>
                     <br><br>
                     Fecha de nacimiento:     <input type="date" name="fecha">
-  
-                <td rowspan="1">Datos complementarios</td>
-
+                </td>
+                <td colspan="2" rowspan="1">Datos complementarios</td>
+                </tr>
 
             <tr>
                 <td class="titulo"></td>
                 <td></td>
-                <td rowspan="3">Datos adicionales</td>
+                <td colspan="2" rowspan="2">Datos adicionales</td>
             </tr>
             <tr>
-                <td class="titulo">Subir archivo:</td>
-                <td><input type="file" name="archivo"></td>
+                <td colspan="2" class="titulo">Subir archivo:  <input type="file" name="archivo">
+                <br><br>    
+                Comentarios:
+                <br><br>
+                <textarea name="comentarios" rows="4" cols="40"></textarea></td>
+                <td></td>
             </tr>
             <tr>
-                <td class="titulo">Comentarios:</td>
-                <td><textarea name="comentarios" rows="4" cols="40"></textarea></td>
+                
             </tr>
             <tr>
                 <td colspan="2" class="botones">
